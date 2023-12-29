@@ -45,7 +45,13 @@ function calculator2() {
     return subtract;
 }
 // Get subtract function under the name of sub
-var sub = calculator2();
+// var sub = calculator2();
 // console.log(sub);
-console.log(sub(20, 5));
-console.log(calculator2()(20, 5));
+// console.log(sub(20,5));
+//Shortcut way
+// console.log(calculator2()(20,5));
+//Ananomous function
+var hello2 = function (name) {
+    return "Hello" + " " + name;
+};
+console.log(hello2("navid"));
