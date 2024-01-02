@@ -8,7 +8,7 @@ console.log(set);
 console.log(set.values());
 console.log(set.keys());
 set.delete("JS");
-set.add("React"); // Do not accept repetitive element
+set.add("React"); // Do not accept repetitive element - Remove duplicate
 console.log(set);
 console.log(typeof set);
 set.forEach((course) => {
