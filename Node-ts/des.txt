@@ -1,0 +1,40 @@
+// Initial typeScript => create tsconfig.json file
+ts --init 
+
+npm init -y 
+
+npm install @types/node --save-dev
+
+// add to tscongig.json at the top
+  "include": [
+    "./src/**/*.ts"
+  ],
+
+// in tscongig.json
+ "outDir": "./build",   /* Specify an output folder for all emitted files. */
+
+// for creating new file in js format on build folder => 
+tsc
+
+// for having tsc and run in one command in package.json
+"dev": "tsc && node ./build/write-to-file" => npm run dev
+
+//--------------------------------------------------------------------------
+// for using express package *************
+
+npm install express
+npm install @types/express --save-dev
+
+// for running
+npm install nodemon ts-node --save-dev
+
+npx ts-node src/server.ts =>      
+// without running js file , we can work on node with ts file
+but for each changes we need to restart the server
+
+
+npx nodemon --watch ./src/server.ts --exec ts-node  ./src/server.ts
+
+for package.jason =>  "serve": "npx nodemon --watch ./src/server.ts --exec ts-node  ./src/server.ts"
+
+
