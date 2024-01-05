@@ -1,0 +1,16 @@
+npm install -g create-react-app
+
+1 -  // Create a react app with typescript from scartch
+npx create-react-app typescript-and-react --template typescript
+
+
+2 - //  Add typescript to our existing react app withot typescript
+npx create-react-app typescript-and-react2
+npm install typescript --save-dev
+npx tsc --init
+copy tscongig from previous stage to this app
+npm install --save-dev @types/node @types/react @types/react-dom @types/jest
+and now we should change all js files to tsc files
+npm run start
+go to the index.tsx and do some changes
+create a new component under the name of HelloTS.tsx and work on type for props
